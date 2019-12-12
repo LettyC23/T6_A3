@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_agregar_altas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="Agregar"
+            android:text="@string/btnAgregar"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toEndOf="@+id/btn_cancelar_altas"
+            app:layout_constraintTop_toBottomOf="@+id/et_email_altas" />
+
+        <TextView
+            android:id="@+id/text_agregar"
+            android:layout_width="365dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/txt_titulo_agregar"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_nombre_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_agregar" />
+
+        <EditText
+            android:id="@+id/et_primerap_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_nombre_altas" />
+
+        <EditText
+            android:id="@+id/et_segundoap_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_primerap_altas" />
+
+        <TextView
+            android:id="@+id/tv_nombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/tv_nombres"
+            app:layout_constraintEnd_toStartOf="@+id/et_nombre_altas"
+            app:layout_constraintTop_toBottomOf="@+id/text_agregar" />
+
+        <TextView
+            android:id="@+id/tv_primerap"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_primerap"
+            app:layout_constraintEnd_toStartOf="@+id/et_primerap_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombres" />
+
+        <TextView
+            android:id="@+id/tv_segundoap"
+            android:layout_width="75dp"
+            android:layout_height="36dp"
+            android:text="@string/tv_seguncdoap"
+            app:layout_constraintEnd_toStartOf="@+id/et_segundoap_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_primerap" />
+
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/tv_direccion"
+            app:layout_constraintEnd_toStartOf="@+id/et_direccion_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_segundoap" />
+
+        <TextView
+            android:id="@+id/tv_fechanac"
+            android:layout_width="93dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/tv_fechanac"
+            app:layout_constraintEnd_toStartOf="@+id/et_fechnac_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_direccion" />
+
+        <Button
+            android:id="@+id/btn_cancelar_altas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="cancelar"
+            android:text="@string/btn_cancelar_login"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email_altas" />
+
+        <TextView
+            android:id="@+id/tv_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/tv_telefono"
+            app:layout_constraintEnd_toStartOf="@+id/et_telefono_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fechanac" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_email"
+            app:layout_constraintEnd_toStartOf="@+id/et_email_altas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_telefono" />
+
+        <EditText
+            android:id="@+id/et_direccion_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_segundoap_altas" />
+
+        <EditText
+            android:id="@+id/et_fechnac_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="76dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_direccion_altas" />
+
+        <EditText
+            android:id="@+id/et_telefono_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fechnac_altas" />
+
+        <EditText
+            android:id="@+id/et_email_altas"
+            android:layout_width="186dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="76dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_telefono_altas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

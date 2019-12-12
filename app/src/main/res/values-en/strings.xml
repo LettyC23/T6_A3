@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyecto1</string>
+    <string name="txt_usuario">User</string>
+    <string name="app_contraseña">Password</string>
+    <string name="btn_aceptar_login">OK</string>
+    <string name="btn_cancelar_login">CANCEL</string>
+
+    <string name="tv_nombres">NAME</string>
+    <string name="tv_primerap">LAST NAME:</string>
+    <string name="tv_seguncdoap">MOTHERS LAST NAME:</string>
+    <string name="tv_direccion"> ADDRESS:</string>
+    <string name="tv_fechanac"> BIRTHDATE:</string>
+    <string name="tv_telefono">PHONE:</string>
+    <string name="tv_email">E-MAIL:</string>
+    <string name="btnAgregar">ADD</string>
+    <string name="btnEliminar">DELETE</string>
+    <string name="btnConsultar">SEARCH</string>
+    <string name="btnModifica">MODIFY</string>
+    <string name="txt_titulo_modificar">Modify customer data</string>
+    <string name="txt_titulo_agregar">Add a new customer</string>
+    <string name="txt_titulo_eliminar">Delete existing customers</string>
+    <string name="txt_titulo_buscar">Search existing customers</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Proyecto1</string>
+    <string name="txt_usuario">Usuario</string>
+    <string name="app_contraseña">Contraseña</string>
+    <string name="btn_aceptar_login">ACEPTAR</string>
+    <string name="btn_cancelar_login">CANCELAR</string>
+
+    <string name="tv_nombres">NOMBRES:</string>
+    <string name="tv_primerap">APELLIDO PATERNO:</string>
+    <string name="tv_seguncdoap">APELLIDO MATERNO:</string>
+    <string name="tv_direccion"> DIRECCIÓN:</string>
+    <string name="tv_fechanac"> FECHA DE NACIMIENTO:</string>
+    <string name="tv_telefono">TELÉFONO:</string>
+    <string name="tv_email">EMAIL:</string>
+    <string name="btnAgregar">AGREGAR</string>
+    <string name="btnEliminar">ELIMINAR</string>
+    <string name="btnConsultar">BUSCAR</string>
+    <string name="btnModifica">MODIFICAR</string>
+    <string name="txt_titulo_modificar">Modificar datos del cliente</string>
+    <string name="txt_titulo_agregar">Agregar un nuevo cliente</string>
+    <string name="txt_titulo_eliminar">Eliminar clientes existentes</string>
+    <string name="txt_titulo_buscar">Buscar clientes existentes</string>
+</resources>
